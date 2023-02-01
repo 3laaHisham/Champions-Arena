@@ -33,7 +33,7 @@ The Project was completed over three main Milestones.
 1) You will need SQL Server and Visual studio with its requirements.
 2) Clone the project.
 ```bash
-  git clone https://github.com/abdulrhman500/Stadiums-Management-system.git
+  git clone https://github.com/3laaHisham/Sports-League-Management.git
 ```
 3) Open Databse/Database.sql and follow the instructions inside it and save the server name you connect to (If you use (localdb)\MSSQLLocalDB you will not worry about the configuration).
 
@@ -44,7 +44,7 @@ The Project was completed over three main Milestones.
 P.S: You can use username: admin, password: admin to access as a System Admin.
 
 ## Authors
-
-- [Abdulrhman Fahmy](https://www.github.com/abdulrhman500)
 - [Alaa Hisham](https://www.github.com/3laaHisham)
+- [Abdulrhman Fahmy](https://www.github.com/abdulrhman500)
+
 
