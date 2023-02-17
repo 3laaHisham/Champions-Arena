@@ -30,12 +30,12 @@ The Project was completed over three main Milestones.
 
 ## Run Locally
 
-1) You will need SQL Server and Visual studio with its requirements.
+1) You will need SQL Server and Visual studio with .NET requirements.
 2) Clone the project.
 ```bash
   git clone https://github.com/3laaHisham/Sports-League-Management.git
 ```
-3) Open Databse/Database.sql and follow the instructions inside it and save the server name you connect to (If you use (localdb)\MSSQLLocalDB you will not worry about the configuration).
+3) Open Database/Database.sql and follow the instructions inside it and save the server name you connect to (If you use (localdb)\MSSQLLocalDB you will not worry about the configuration).
 
 4) Open the solution in Visual studio and run the login page.
 
