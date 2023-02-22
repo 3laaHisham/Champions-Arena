@@ -20,21 +20,22 @@ The Project was completed over three main Milestones.
 
 ## Screenshots
 
-| <img src="https://github.com/3laaHisham/Sports-League-Management/releases/download/img/Register.jpeg"> |
-|:--:| 
-| **Registering** |
 
 | <img src="https://github.com/3laaHisham/Sports-League-Management/releases/download/img/Login.jpeg"> |
 |:--:| 
 | **Login** |
 
-| <img src="https://github.com/3laaHisham/Sports-League-Management/releases/download/img/Stadium.Manager.jpeg"> |
+| <img src="https://github.com/3laaHisham/Sports-League-Management/releases/download/img/Register.jpeg"> |
 |:--:| 
-| **Stadium Manager** |
+| **Registering** |
 
 | <img src="https://github.com/3laaHisham/Sports-League-Management/releases/download/img/Club.Representative.jpeg"> |
 |:--:| 
 | **Club Representative** |
+
+| <img src="https://github.com/3laaHisham/Sports-League-Management/releases/download/img/Stadium.Manager.jpeg"> |
+|:--:| 
+| **Stadium Manager** |
 
 
 ## Run Locally
