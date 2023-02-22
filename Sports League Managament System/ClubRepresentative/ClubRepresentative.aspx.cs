@@ -97,7 +97,7 @@ namespace Sports_League_Managament_System.ClubRepresentative
             DataTable table = Utils.SqlTable(sqlCmd, parameters, values);
 
             if (table.Rows.Count == 0)
-                ClubDiv.InnerText = "There are no stadium in the database";
+                ClubDiv.InnerText = "There are no stadiums in the database";
             else
             {
                 StadiumRequest.InnerHtml = "<select class=\"nav-item dropdown\" name=\"selectedStadium\" id=\"selectedStadium\">\r\n ";

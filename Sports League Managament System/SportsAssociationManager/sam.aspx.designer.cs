@@ -195,13 +195,13 @@ namespace Sports_League_Managament_System.SportsAssociationManager
         protected global::System.Web.UI.WebControls.Button view_upcomming_matches;
 
         /// <summary>
-        /// vew_upcommingmatches control.
+        /// view_upcommingmatches control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView vew_upcommingmatches;
+        protected global::System.Web.UI.WebControls.GridView view_upcommingmatches;
 
         /// <summary>
         /// view_aleady_label control.

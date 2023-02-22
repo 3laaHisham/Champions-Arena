@@ -69,8 +69,8 @@ namespace Sports_League_Managament_System.SportsAssociationManager
             if (table.Rows.Count == 0)
                 message.Text = "No Data available";
 
-            vew_upcommingmatches.DataSource = table;
-            vew_upcommingmatches.DataBind();
+            view_upcommingmatches.DataSource = table;
+            view_upcommingmatches.DataBind();
         }
 
         protected void btn_Already_Played_Click(object sender, EventArgs ie)

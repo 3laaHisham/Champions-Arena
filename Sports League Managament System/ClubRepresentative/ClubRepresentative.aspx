@@ -23,7 +23,7 @@
                 <asp:GridView CssClass="table"  ID="upcomingMatches" runat="server" HorizontalAlign="Center"></asp:GridView>
             </div>
 
-             <hr /> 
+             <hr/> 
 
             <div>
                 <h2>The available stadiums on a specific date</h2>

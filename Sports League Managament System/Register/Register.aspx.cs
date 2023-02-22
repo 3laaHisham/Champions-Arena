@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Net;
 using System.Security.Policy;
 using System.Web.UI;
@@ -18,13 +19,16 @@ namespace Sports_League_Managament_System.Register
             selectedUserType = usertype.SelectedItem.Value;
 
             Shared1.Style.Clear();
-            SelectRole.Style.Value = "display: none";
+
             if (selectedUserType == "cr" || selectedUserType == "sm")
             {
                 StadiumORClub.Style.Clear();
-                StadiumORClubLabel.Text = selectedUserType == "cr" ? "Club Name" : "Stadium Name";
+                StadiumORClubLabel.Text = selectedUserType == "cr" ? "Club" : "Stadium";
+                viewStadiumsORClubs();
+
                 Fan.Style.Value = "display: none";
-            } 
+            }
+            
             if (selectedUserType == "fan")
             {
                 Fan.Style.Clear();
@@ -33,6 +37,24 @@ namespace Sports_League_Managament_System.Register
 
             Shared2.Style.Clear();
 
+        }
+
+        private void viewStadiumsORClubs()
+        {
+            string sqlCmd = "SELECT name FROM " + StadiumORClubLabel.Text;
+            string[] parameters = { };
+            Object[] values = { };
+
+            DataTable table = Utils.SqlTable(sqlCmd, parameters, values);
+
+            if (table.Rows.Count == 0)
+                status.Text = "There are no stadiums/clubs in the database";
+            else {
+                selectedStadiumORClubDrop.InnerHtml = "<select name=\"selectedStadiumORClub\" id=\"selectedStadiumORClub\">\r\n ";
+                foreach (DataRow row in table.Rows)
+                    selectedStadiumORClubDrop.InnerHtml += "<option class=\"nav-item\" value=\"" + row[0] + "\">" + row[0] + "</option>\r\n";
+                selectedStadiumORClubDrop.InnerHtml += "</select>";
+            }
         }
 
         protected void Register_Click(object sender, EventArgs e)
@@ -75,11 +97,12 @@ namespace Sports_League_Managament_System.Register
             bool isSuccess = Utils.execProcedure(procedureName, parameters, values);
 
             return isSuccess;
+
         }
 
         private bool AddRepresentative()
         {
-            String clubName = StadiumORClubText.Text;
+            String clubName = Request.Form["selectedStadiumORClub"];
 
             String[] inputs = { clubName };
             bool valid = validateInput(inputs);
@@ -100,7 +123,7 @@ namespace Sports_League_Managament_System.Register
 
         private bool AddStadiumManager()
         {
-            String stadiumName = StadiumORClubText.Text;
+            String stadiumName = Request.Form["selectedStadiumORClub"];
 
             String[] inputs = { stadiumName };
             bool valid = validateInput(inputs);

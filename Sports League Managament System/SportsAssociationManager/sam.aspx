@@ -4,36 +4,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <link rel="stylesheet" href="..\css\bootstrap-lumen.css" />
+    <title>Sports Association Manager</title>
+    <style>
+        div {
+            background-color: white;
+            padding: 30px;
+        }
+    </style>
 </head>
 <body>
     <asp:Label ID="message" runat="server" Text=""></asp:Label>
-    <br /><br />
     <form id="form1" runat="server">
         <div id="new_match">
-            <asp:Label ID="add_match_label" runat="server" Text="Add New Match" CssClass="header"></asp:Label>
-            <br />
-            <br />
+
+            <asp:Label ID="add_match_label" runat="server" Text="Add New Match"></asp:Label>
+            <br /><br />
             <asp:Label ID="Label1" runat="server" Text="host club"></asp:Label>
             <asp:TextBox ID="new_match_hclub" runat="server" Text="host club"></asp:TextBox>
 
             <asp:Label ID="Label2" runat="server" Text="guest club"></asp:Label>
             <asp:TextBox ID="new_match_gclub" runat="server" Text="guest club"></asp:TextBox>
-            
-            <asp:Label ID="Label3" runat="server" Text="start date"></asp:Label>
+            <br />
+            <asp:Label ID="Label3" runat="server" Text="start date"></asp:Label>0
             <input type="datetime-local" id="new_match_start" runat ="server" />
-            
             
             <asp:Label ID="Label5" runat="server" Text="end date"></asp:Label>
             <input type="datetime-local" id="edate" runat ="server" />
-           
+           <br />
             <asp:Button ID="Addnewmatch" runat="server" Text="Add new match" OnClick="Addnewmatch_Click" />
             
-
-
         </div>
-        <br />
-        <br />
+
+        <br /><br />
 
         <div id="delete_match">
             <asp:Label ID="delet_label" runat="server" Text="Delete Match" CssClass="header"></asp:Label>
@@ -52,14 +55,12 @@
         <br />
         <br />
         <div id="view_up">
-            <asp:Label ID="view_up_label" runat="server" Text="UP Coming Matches"></asp:Label>
+            <asp:Label ID="view_up_label" runat="server" Text="Upcoming Matches"></asp:Label>
             <br />
 
             <asp:Button ID="view_upcomming_matches" runat="server" Text="Button" OnClick="view_upcomming_matches_Click" />
-            <br />
-            <br />
 
-            <asp:GridView CssClass="table"  ID="vew_upcommingmatches" runat="server"></asp:GridView>
+            <asp:GridView CssClass="table"  ID="view_upcommingmatches" runat="server"></asp:GridView>
 
         </div>
         <br />

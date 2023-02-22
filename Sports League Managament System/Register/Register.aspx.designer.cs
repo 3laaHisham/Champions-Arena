@@ -132,13 +132,13 @@ namespace Sports_League_Managament_System.Register
         protected global::System.Web.UI.WebControls.Label StadiumORClubLabel;
 
         /// <summary>
-        /// StadiumORClubText control.
+        /// selectedStadiumORClubDrop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox StadiumORClubText;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl selectedStadiumORClubDrop;
 
         /// <summary>
         /// Fan control.
