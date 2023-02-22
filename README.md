@@ -20,13 +20,22 @@ The Project was completed over three main Milestones.
 
 ## Screenshots
 
-| <img src="https://via.placeholder.com/468x300?text=App+Screenshot+Here"> |
+| <img src="https://github.com/3laaHisham/Sports-League-Management/releases/download/img/Register.jpeg"> |
 |:--:| 
-| **Registering a new user** |
+| **Registering** |
 
-| <img src="https://via.placeholder.com/468x300?text=App+Screenshot+Here"> |
+| <img src="https://github.com/3laaHisham/Sports-League-Management/releases/download/img/Login.jpeg"> |
 |:--:| 
 | **Login** |
+
+| <img src="https://github.com/3laaHisham/Sports-League-Management/releases/download/img/Stadium.Manager.jpeg"> |
+|:--:| 
+| **Stadium Manager** |
+
+| <img src="https://github.com/3laaHisham/Sports-League-Management/releases/download/img/Club.Representative.jpeg"> |
+|:--:| 
+| **Club Representative** |
+
 
 ## Run Locally
 
@@ -35,7 +44,7 @@ The Project was completed over three main Milestones.
 ```bash
   git clone https://github.com/3laaHisham/Sports-League-Management.git
 ```
-3) Open Database/Database.sql and follow the instructions inside it and save the server name you connect to (If you use (localdb)\MSSQLLocalDB you will not worry about the configuration).
+3) Open Database/Database.sql and follow the instructions inside it and save the server name you connect to (If you use (localdb)\MSSQLLocalDB you will not need to worry about the configuration).
 
 4) Open the solution in Visual studio and run the login page.
 
